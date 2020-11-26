@@ -1,0 +1,29 @@
+{
+  "ninjas": [
+    {
+      "name": "A",
+      "rate": 100,
+      "img": "https://picsum.photos/20"
+    },
+    {
+      "name": "B",
+      "rate": 1230,
+      "img": "https://picsum.photos/20"
+    },
+    {
+      "name": "C",
+      "rate": 160,
+      "img": "https://picsum.photos/20"
+    },
+    {
+      "name": "D",
+      "rate": 140,
+      "img": "https://picsum.photos/20"
+    },
+    {
+      "name": "I",
+      "rate": 300,
+      "img": "https://picsum.photos/20"
+    }
+  ]
+}
