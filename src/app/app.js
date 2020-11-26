@@ -12,7 +12,6 @@ const ninjaApp = angular.module(
 
 ninjaApp.config(['$routeProvider', '$locationProvider', 'customProviderProvider', ($routeProvider, $locationProvider, customProviderProvider) => {
     customProviderProvider.setValue('new Value');
-    $locationProvider.html5Mode(true);
     $routeProvider
         .when('/home', {
             templateUrl: 'views/home.html',
