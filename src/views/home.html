@@ -1,0 +1,16 @@
+<div class="row" ng-repeat="ninja in getNinjas()">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img ng-src="{{ninja.img}}">
+                <span class="card-title">{{ninja.name}}</span>
+            </div>
+            <div class="card-content">
+                {{ninja.rate}}}
+            </div>
+            <div class="card-action">
+                <a href="/directory">This is a link</a>
+            </div>
+        </div>
+    </div>
+</div>

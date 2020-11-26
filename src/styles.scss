@@ -1,0 +1,53 @@
+.fade-view {
+    &.ng-enter {
+        transition: 0.5s linear all;
+        opacity: 0;
+        &.ng-enter-active {
+            opacity: 1;
+        }
+    }
+}
+
+.fade-collection-item {
+    &.ng-enter {
+        transition: 0.2s linear all;
+        opacity: 0;
+        transform: translateY(30px);
+        &.ng-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &.ng-leave {
+        transition: 0.2s linear all;
+        opacity: 1;
+        transform: translateX(0);
+        &.ng-leave-active {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+    }
+
+    // Remove All
+    &.ng-leave-stagger {
+        transition-delay: 0.2s;
+        transition-duration: 0s;
+    }
+}
+
+input,
+textarea {
+    &.ng-invalid {
+        &:not(.ng-pristine) {
+            &.ng-touched {
+                border-bottom-color: red;
+
+                & + label {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+

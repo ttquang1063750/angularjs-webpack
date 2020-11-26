@@ -1,0 +1,24 @@
+<form novalidate name="contactForm" ng-submit="sendMessage()">
+    <h3>Contact To Us</h3>
+    <div class="input-field">
+        <input name="name" id="name" type="text" ng-model="contact.name" ng-required="true">
+        <label for="name">Name</label>
+        <span ng-show="!contactForm.name.$pristine && contactForm.name.$invalid" class="helper-text red-text">Required</span>
+    </div>
+
+    <div class="input-field">
+        <input name="email" id="email" type="text" ng-model="contact.email" ng-required="true">
+        <label for="email">Email</label>
+        <span ng-show="!contactForm.email.$pristine && contactForm.email.$invalid" class="helper-text red-text">Required</span>
+    </div>
+
+    <div class="input-field">
+        <textarea name="message" class="materialize-textarea" id="message" ng-model="contact.message" ng-required="true"></textarea>
+        <label for="message">Message</label>
+        <span ng-show="!contactForm.message.$pristine && contactForm.message.$invalid" class="helper-text red-text">Required</span>
+    </div>
+
+    <div class="input-field">
+        <button ng-disabled="contactForm.$invalid" class="waves-effect waves-light btn" type="submit">Send</button>
+    </div>
+</form>
