@@ -20,5 +20,8 @@ module.exports = merge(common, {
             template: path.resolve(__dirname, 'src/index.html'),
             baseUrl: '/'
         }),
-    ]
+    ],
+    output: {
+        publicPath: '/',
+    },
 });

@@ -11,5 +11,8 @@ module.exports = merge(common, {
             template: path.resolve(__dirname, 'src/index.html'),
             baseUrl: 'https://ttquang1063750.github.io/angularjs-webpack/'
         }),
-    ]
+    ],
+    output: {
+        publicPath: 'https://ttquang1063750.github.io/angularjs-webpack/',
+    },
 });
